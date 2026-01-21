@@ -1,47 +1,18 @@
-# ICP-CUNA0J-2026-REPO
-Repository for tasks and projects completed during the DevOps Internship Program at InternCareerPath
+# Week 1 – Foundation & Setup (Technical Summary)
+
+## Objective
+Set up the development environment and validate it by running a basic Hello World proof of concept.
 
 ## Scope
-Week 1 focuses on environment setup, tool installation, and a Hello World proof of concept.
-
-## Contents
-- Environment setup details
-- Tools and verification steps
-- Hello World proof explanation
+- Environment setup
+- Tool installed and verified
+- Hello World proof of concept
 - Onboarding summary
-- Official references
+- References to official documentation
 
-## Repository Structure
+---
 
-```
-ICP-CUNA0J-2026-REPO/
-├── documentation/
-│   ├── week1-technical-summary.md 
-│
-├── week-1/
-│   ├── 01-tools-setup/
-│   │   ├── installation-notes.md
-│   │   └── tools-versions.txt 
-│   │
-│   ├── 02-hello-world/
-│   │   ├── hello-world-output.txt 
-│   │   ├── screenshot.png
-│   │   └── hello_world.sh 
-│   │
-│   ├── 03-onboarding-notes/
-│   │   └── onboarding-notes.md
-│   │
-│   ├── 04-references/
-│   │   └── official-docs-used.md
-│   │
-│   └── README.md
-│
-├── LICENSE
-└── README.md
-```
-
-
-# Environment setup details
+# Environment Setup
 system and tools used for Week 1 
 
 ## Operating System
@@ -57,30 +28,35 @@ I used bash to run commands, executing scripts, and managing files.
 ## Validation
 The setup was verified by checking tool versions and successfully running a Hello World Bash script, confirming the environment is ready for further DevOps tasks.
 
-# Tools and verification steps
+# Tools Installed & Verified
 
 ## Git & GitHub
 - Purpose: Version control
 - Verification: `git --version`
+- Git 2.42.0
 
-## Linux Terminal
+## Terminal - Bash CLI
 - Purpose: Command-line operations
 - Verification: `uname -a`
+- Terminal: 10.0-22621
 
 ## VS Code
 - Purpose: Code editor
 - Verification: `code --version`
+- VS code: 1.108.1
 
 ## Docker
 - Purpose: Containerization
 - Verification: `docker --version`
+- Docker 24.0.2
 
 ## Azure CLI
 - Purpose: Cloud interaction
 - Verification: `az version`
+- Azure-cli: 2.78.0 
 Verification was done using version checks and basic commands.
 
-# Hello World proof explanation
+# Hello World Proof of Concept
 
 ## Objective
 To confirm that the environment and tools are working correctly.
@@ -104,10 +80,14 @@ The script was executed successfully using Bash.
 - Screenshots saved 
 
 # Onboarding summary
+## Key Guidelines
 - Weekly task submissions
 - Proper documentation
 - Use of GitHub for tracking progress
 - LinkedIn profile update to highlight progress and key learnings
+
+## Personal Takeaway
+Week 1 emphasized building a strong foundation before advanced tasks.
 
 ## References and official documentation
 
@@ -115,3 +95,9 @@ The script was executed successfully using Bash.
 - Docker Documentation – https://docs.docker.com
 - Azure CLI Documentation – https://learn.microsoft.com/cli/azure
 - Bash Scripting Guide – https://www.gnu.org/software/bash/manual/
+
+All references were used to ensure correct installation and usage of tools.
+
+
+
+
