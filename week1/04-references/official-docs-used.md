@@ -1,5 +1,6 @@
 
-# Official docs used:
+# Official docs used
+This file records the trusted sources i relied on while setting up tools and completing tasks.
 
 VScode download from https://code.visualstudio.com/download
 
@@ -11,3 +12,5 @@ Azure CLI Installed from https://learn.microsoft.com/en-us/cli/azure/install-azu
 
 Terminal - Git bash
 
+
+  

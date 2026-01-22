@@ -1,22 +1,31 @@
-Internship Timeline & Submission:
+This file captures key information from my internship onboarding, such as expectations, guidelines, tools, and workflow standards.
 
-Internship Duration: 6 Weeks
-Task Assignment Date: Immediate
+# Internship Timeline & Submission
 
-Submission Portal Access: To be activated after 2 weeks from the task assignment date. 
-Submission Mode: All tasks must be submitted only through the InternCareerPath submission portal. 
+# Internship Duration:    
+6 Weeks
+# Task Assignment Date: 
+Immediate
 
-Technical Guidelines:
-GitHub Repository: Create a GitHub repository titled ICP-CUNA0J-2026-REPO and maintain all assigned tasks in this repository.
+# Submission Portal Access: 
+To be activated after 2 weeks from the task assignment date. 
+# Submission Mode: 
+All tasks must be submitted only through the InternCareerPath submission portal. 
+
+# Technical Guidelines
+# GitHub Repository: 
+Create a GitHub repository titled ICP-CUNA0J-2026-REPO and maintain all assigned tasks in this repository.
 The repository link must be submitted through the official submission portal once it opens.
 
-Professional Engagement (Mandatory):
+# Professional Engagement (Mandatory):
 LinkedIn Profile Update: You are required to update your LinkedIn profile and share your Offer Letter as a post. Tag InternCareerPath and use the hashtag #InternCareerPath.
-Task Completion Updates: After completing each task, share a LinkedIn post describing your learning and experience. Video posts are optional but encouraged.
+# Task Completion Updates: 
+After completing each task, share a LinkedIn post describing your learning and experience. Video posts are optional but encouraged.
 
-Compliance Note: Failure to comply with mandatory LinkedIn engagement or submission guidelines may result in termination of the internship without further notice.
+# Compliance Note: 
+Failure to comply with mandatory LinkedIn engagement or submission guidelines may result in termination of the internship without further notice.
 
-Important Notes:
+# Important Notes:
 Stipend: This is an unpaid internship.
 Certification: Upon successful completion, you will receive:
 - Internship Completion Certificate
