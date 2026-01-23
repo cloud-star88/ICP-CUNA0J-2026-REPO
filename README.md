@@ -11,14 +11,16 @@ Week 1 focuses on environment setup, tool installation, and a Hello World proof 
 - Onboarding summary
 - Official references
 
-## Repository Structure
+# Repository Structure
 
 ```
 ICP-CUNA0J-2026-REPO/
-├── documentation/
-│   ├── week1-technical-summary.md 
-│
+
 ├── week-1/
+|   ├── documentation/
+│   ├── week1-technical-summary.md 
+│   ├── screenshots/
+|
 │   ├── 01-tools-setup/
 │   │   ├── installation-notes.md
 │   │   └── tools-versions.txt 
@@ -41,20 +43,20 @@ ICP-CUNA0J-2026-REPO/
 ```
 
 
-# Environment setup details
+**Environment setup details**
 system and tools used for Week 1 
 
-## Operating System
+**Operating System**
 - OS: Windows 11
 
-## Terminal & Shell
+**Terminal & Shell**
 - Bash 
 I used bash to run commands, executing scripts, and managing files.
 
-## Development Tools
+**Development Tools**
 - Editor: Visual Studio Code
 
-## Validation
+**Validation**
 The setup was verified by checking tool versions and successfully running a Hello World Bash script, confirming the environment is ready for further DevOps tasks.
 
 # Tools and verification steps

@@ -35,34 +35,34 @@ I verified each setup by checking tool versions and successfully running a Hello
 - Verification: `git --version`
 - Git 2.42.0
 OS: Windows 11
-![Workflow display](./01-screenshots/01-git-version.png)
+![Workflow display](./screenshots/01-git-version.png)
 
-![Workflow display](./01-screenshots/02-github-connectivity.png)
+![Workflow display](./screenshots/02-github-connectivity.png)
 
 ## Terminal - Bash CLI
 - Purpose: Command-line operations
 - Verification: `uname -a`
 - Terminal: 10.0-22621
-![Workflow display](./01-screenshots/03-os-and-bash.png)
+![Workflow display](./screenshots/03-os-and-bash.png)
 
 ## VS Code
 - Purpose: Code editor
 - Verification: `code --version`
 - VS code: 1.108.1
-![Workflow display](./01-screenshots/04-vs-code.png)
+![Workflow display](./screenshots/04-vs-code.png)
 
 ## Docker
 - Purpose: Containerization
 - Verification: `docker --version`
 - Docker 24.0.2
-![Workflow display](./01-screenshots/05-docker.png)
+![Workflow display](./screenshots/05-docker.png)
 
 ## Azure CLI
 - Purpose: Cloud interaction
 - Verification: `az version`
 - Azure-cli: 2.78.0 
 Verification was done using version checks and basic commands.
-![Workflow display](./01-screenshots/06-azure-CLI.png)
+![Workflow display](./screenshots/06-azure-CLI.png)
 
 # Hello World Proof of Concept
 **Objective:** Confirm environment setup and tool functionality  
