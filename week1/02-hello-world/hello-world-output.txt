@@ -1,5 +1,0 @@
-
-$ ./hello-world.sh
-/c/Users/HomePC/Documents/ICP-CUNA0J-2026-REPO/week1/02-hello-world
-hello-world.sh  hello-world-output.txt  hello-world-screenshot.png
-Hello World
