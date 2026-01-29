@@ -94,6 +94,9 @@ In Week 2, I built a simple backend application using Python to strengthen my un
 - Managing in-memory data and realizing data resets when the app exits.
 - Handling user input errors (invalid choices or task numbers).
 - after re-structuring my week 1 folder and updating my week 2 i pushed to git but realized every update i made didn't reflect except the python file in week2.
+- when i entered `git add .` this message poped up `warning: in the working copy of 'README.md', CRLF will be replaced by LF the next time Git touches it` so, i resolved this by running this: git config --global core.autocrlf true
+
+
 
 
 Debugging file path and execution issues in the terminal.
