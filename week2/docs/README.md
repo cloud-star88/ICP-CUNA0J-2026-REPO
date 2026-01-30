@@ -1,8 +1,14 @@
-# Week 2 Project: Backend Application
+# Week 2: Core Concepts
+**Project:** Simple Application
+**Description:** Implement core logic and data structures.
+**Tech Stack:** Core Language - python
+**Hints:** Focus on clean syntax
 
 ## Overview
-This project is a simple `backend application` built using Python to demonstrate `core programming concepts`.  
-It focuses on implementing backend logic and managing data using basic data structures through a command-line interface.
+This project is a simple backend application designed to demonstrate core programming concepts using Python.
+It manages tasks in memory and allows users to add, view, and remove tasks through a command-line interface.
+
+The focus of this project is logic, data structures, and clean code, not deployment or databases.
 
 ---
 
@@ -40,8 +46,6 @@ ICP-CUNA0J-2026-REPO/
 ```
 
 
-
-
 ## Application Functionality
 The backend application handles the following operations:
 - Add tasks
@@ -53,9 +57,9 @@ All operations are performed in memory using a simple data structure.
 
 ---
 
-## Tech Stack
-- **Language:** Python
-- **Interface:** Bash CLI
+## Technology Used
+Programming Language: Python
+Interface: Command Line (CLI)
 
 ---
 
@@ -77,12 +81,6 @@ This approach keeps the focus on **core concepts**, not infrastructure.
 
 ---
 
-## How to Run
-1. Open a terminal in the project directory.
-2. Run the application:
-   ```bash
-   python todo.py
-
 ## Core Concepts Demonstrated
 - Variables
 - Lists (data structures)
@@ -91,3 +89,10 @@ This approach keeps the focus on **core concepts**, not infrastructure.
 - Conditional statements
 - Basic error handling
 - Clean syntax and logical code structure
+
+## How to Run
+1. Open a terminal in the project directory.
+2. Run the application:
+   ```bash
+   python todo.py
+

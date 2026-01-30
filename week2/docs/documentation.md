@@ -1,11 +1,8 @@
-# Week 2 Project Documentation
-# Backend Application
+# Week 2 Project Documentation – Backend Application
 
 ## Overview
 This project is a simple backend application designed to demonstrate core programming concepts using Python.
 It manages tasks in memory and allows users to add, view, and remove tasks through a command-line interface.
-
-The focus of this project is logic, data structures, and clean code, not deployment or databases.
 
 ## Purpose of the Project
 
@@ -15,94 +12,52 @@ Practice using basic data structures
 Write clean and readable code
 Build confidence with core programming fundamentals
 
-## Application Responsibilities
-The backend application handles the following:
+**Step 1: Project Setup**
 
-Task Creation – Accepts user input and stores tasks in memory
+I created a simple backend application using Python to practice core programming concepts. The application runs in the terminal and manages tasks in memory.
 
-Task Retrieval – Displays all stored tasks in an ordered list
+**Step 2: Data Structure**
 
-Task Deletion – Removes a selected task from the list
+I initialized an empty list to store tasks. This list holds all task entries while the application is running.
 
-Program Control – Keeps the application running until the user exits
+**Step 3: Menu Logic**
 
-## Technology Used
-Programming Language: Python
-Interface: Command Line (CLI)
+I implemented a menu function to display available actions: add task, view tasks, remove task, and exit.
 
-## Data Handling
-Tasks are stored using a list data structure
+**Step 4: Add Task Functionality**
 
-Each task exists only while the application is running
+I wrote a function that collects user input and appends new tasks to the list.
 
-No database or external storage is used
+**Step 5: View Tasks Functionality**
 
-This approach keeps the project focused on core concepts.
+I implemented logic to display all stored tasks, handling cases where no tasks exist.
 
-## Core Concepts Demonstrated
+**Step 6: Remove Task Functionality**
 
-Variables
+I added functionality to remove a task by its number, including basic error handling for invalid input.
 
-Lists (data structures)
+**Step 7: Program Flow Control**
 
-Functions
+I used a continuous loop to keep the application running until the user chooses to exit.
 
-Loops
+**Step 8: Error Handling**
 
-Conditional statements
+I handled common user input errors to prevent the application from crashing.
 
-Error handling (basic)
+**Step 9: Execution**
 
-Clean and readable syntax
-
-## How the Application Works
-
-The application displays a menu of options.
-
-The user selects an action.
-
-The backend logic processes the request.
-
-Data is updated in memory.
-
-The menu repeats until the user chooses to exit.
-
-## How to Run the Application
-
-Open a terminal in the project directory.
-
-Run the Python file:
-
-python todo.py
-Follow the on-screen instructions.
-Limitations
-No persistent storage (data resets on exit)
-No user authentication
-No graphical or web interface
-These limitations are intentional to maintain focus on core backend logic.
+I structured the program with a main entry point to ensure clean execution when the script runs.
 
 ## Conclusion
 
-This project demonstrates the fundamentals of building a backend application, focusing on data structures, logic flow, and clean code practices.
-It serves as a strong foundation for future backend, DevOps, and cloud-based projects.
-
-In Week 2, I built a simple backend application using Python to strengthen my understanding of core programming concepts. The project focused on implementing backend logic and managing data using basic data structures.
+In Week 2, I built a simple backend application using Python. This project strengthened my understanding of core programming concepts, it demonstrates the fundamentals of building a backend application, focusing on data structures, logic flow, and clean code practices. 
 
 ## Challenges faced:
 - Understanding how to structure backend logic using functions and loops.
-- App refused to run until i used `#!/usr/bin/env python` at the top of the script 
+- App refused to run until `#!/usr/bin/env python` was used at the top of the script. 
 - Managing in-memory data and realizing data resets when the app exits.
-- Handling user input errors (invalid choices or task numbers).
-- after re-structuring my week 1 folder and updating my week 2 i pushed to git but realized every update i made didn't reflect except the python file in week2.
-- when i entered `git add .` this message poped up `warning: in the working copy of 'README.md', CRLF will be replaced by LF the next time Git touches it` so, i resolved this by running this: git config --global core.autocrlf true
-
-
-
-
-Debugging file path and execution issues in the terminal.
-
-Controlling program flow so menus and actions behave correctly.
-Structuring my folder and files. I used ctrl + , then typeed "file explorer" and chose from the options listed.
+- Difficulty pushing all changes to github at once. i had to cd into the verious folders and had to push each content seperately. 
+- On entering `git add .` a message poped out `warning: in the working copy of 'README.md', CRLF will be replaced by LF the next time Git touches it.` i resolved this by running: git config --global core.autocrlf true
 
 ## What I Learned
 
