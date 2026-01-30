@@ -125,11 +125,11 @@ The script was executed successfully using Bash.
 **Tech Stack:** Core Language - python
 **Hints:** Focus on clean syntax
 
-# Week 2 Project: Backend Application
-
 ## Overview
-This project is a simple **backend application** built using Python to demonstrate **core programming concepts**.  
-It focuses on implementing backend logic and managing data using basic data structures through a command-line interface.
+This project is a simple backend application designed to demonstrate core programming concepts using Python.
+It manages tasks in memory and allows users to add, view, and remove tasks through a command-line interface.
+
+The focus of this project is logic, data structures, and clean code, not deployment or databases.
 
 ---
 
@@ -142,10 +142,11 @@ The objective of this project is to strengthen understanding of:
 
 ---
 
+# Repository Structure
+
 ```
 ICP-CUNA0J-2026-REPO/
 
-├── week1/
 ├── week2/
 |   ├── docs/
 │       ├── documentation.md
@@ -165,6 +166,7 @@ ICP-CUNA0J-2026-REPO/
 └── README.md
 ```
 
+
 ## Application Functionality
 The backend application handles the following operations:
 - Add tasks
@@ -176,9 +178,9 @@ All operations are performed in memory using a simple data structure.
 
 ---
 
-## Tech Stack
-- **Language:** Python 3
-- **Interface:** Command Line (CLI)
+## Technology Used
+Programming Language: Python
+Interface: Command Line (CLI)
 
 ---
 
@@ -191,17 +193,6 @@ This approach keeps the focus on **core concepts**, not infrastructure.
 
 ---
 
-## Core Concepts Demonstrated
-- Variables
-- Lists (data structures)
-- Functions
-- Loops
-- Conditional statements
-- Basic error handling
-- Clean syntax and logical code structure
-
----
-
 ## How the Application Works
 1. The program displays a menu of options.
 2. The user selects an action.
@@ -211,8 +202,17 @@ This approach keeps the focus on **core concepts**, not infrastructure.
 
 ---
 
+## Core Concepts Demonstrated
+- Variables
+- Lists (data structures)
+- Functions
+- Loops
+- Conditional statements
+- Basic error handling
+- Clean syntax and logical code structure
+
 ## How to Run
 1. Open a terminal in the project directory.
 2. Run the application:
    ```bash
-   ./todo.py
+   python todo.py
