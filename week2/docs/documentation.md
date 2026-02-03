@@ -1,77 +1,127 @@
-# Week 2 Project Documentation – Backend Application
+# Week 2: Core Concepts
+**Project:** Simple Application
+**Description:** Implement core logic and data structures.
+**Tech Stack:** Core Language
+**Hints:** Focus on clean syntax
 
-## Overview
-This project is a simple backend application designed to demonstrate core programming concepts using Python.
-It manages tasks in memory and allows users to add, view, and remove tasks through a command-line interface.
+# Week 2 Documentation – Backend Application
 
-## Purpose of the Project
+## Step 1: Understanding the Project Goal
+The goal of Week 2 was to implement **core programming concepts** by building a simple backend application.  
+The focus was on logic, data structures, and clean syntax — not UI, databases, or deployment.
 
-The goal of this project is to:
-Understand how backend logic works
-Practice using basic data structures
-Write clean and readable code
-Build confidence with core programming fundamentals
+---
 
-**Step 1: Project Setup**
+## Step 2: Choosing the Application
+I chose to build a **task management backend application** (To-Do logic) because it naturally demonstrates:
+- Data storage
+- Control flow
+- User input handling
+- Backend logic
 
-I created a simple backend application using Python to practice core programming concepts. The application runs in the terminal and manages tasks in memory.
+The application runs in the terminal.
 
-**Step 2: Data Structure**
+---
 
-I initialized an empty list to store tasks. This list holds all task entries while the application is running.
+## Step 3: Selecting the Tech Stack
+- **Programming Language:** Python  
+I chose Python because of its clean syntax and suitability for demonstrating core concepts clearly.
 
-**Step 3: Menu Logic**
+---
 
-I implemented a menu function to display available actions: add task, view tasks, remove task, and exit.
+## Step 4: Setting Up the Project Structure
+I created a Week 2 project folder and added:
+- `todo.py` → main backend logic
+- `README.md` → project overview
+- `documentation.md` → detailed process documentation
 
-**Step 4: Add Task Functionality**
+---
 
-I wrote a function that collects user input and appends new tasks to the list.
+## Step 5: Defining the Data Structure
+I initialized an empty list to store tasks:
+- The list holds all tasks while the application is running
+- No database is used
+- Data is stored in memory only
 
-**Step 5: View Tasks Functionality**
+This keeps the project focused on fundamentals.
 
-I implemented logic to display all stored tasks, handling cases where no tasks exist.
+---
 
-**Step 6: Remove Task Functionality**
+## Step 6: Building the Menu Logic
+I implemented a menu function to display available actions:
+1. Add task  
+2. View tasks  
+3. Remove task  
+4. Exit  
 
-I added functionality to remove a task by its number, including basic error handling for invalid input.
+This menu guides user interaction with the backend logic.
 
-**Step 7: Program Flow Control**
+---
 
-I used a continuous loop to keep the application running until the user chooses to exit.
+## Step 7: Implementing Add Task Functionality
+I wrote a function that:
+- Prompts the user for a task
+- Appends the task to the list
+- Confirms successful addition
 
-**Step 8: Error Handling**
+This demonstrates user input handling and list operations.
 
-I handled common user input errors to prevent the application from crashing.
+---
 
-**Step 9: Execution**
+## Step 8: Implementing View Tasks Functionality
+I implemented logic to:
+- Check if the task list is empty
+- Display a message if no tasks exist
+- Loop through tasks and display them with numbering
 
-I structured the program with a main entry point to ensure clean execution when the script runs.
+This demonstrates conditional statements and loops.
+
+---
+
+## Step 9: Implementing Remove Task Functionality
+I implemented task removal by:
+- Displaying existing tasks
+- Asking the user for a task number
+- Removing the selected task from the list
+
+Basic error handling was added to manage invalid inputs.
+
+---
+
+## Step 10: Controlling Program Flow
+I used a continuous loop to keep the application running until the user chooses to exit.  
+This ensures the backend application remains active and responsive.
+
+---
+
+## Step 11: Handling Errors
+I added simple error handling to prevent the program from crashing when:
+- Non-numeric input is entered
+- An invalid task number is selected
+
+---
+
+## Step 12: Testing the Application
+I manually tested all features:
+- Adding tasks
+- Viewing tasks
+- Removing tasks
+- Exiting the application
+
+I fixed issues related to menu flow and input handling.
+
+---
+
+## Step 13: Final Review
+I reviewed the code to ensure:
+- Clean and readable syntax
+- Proper function separation
+- Logical flow
+
+No extra features were added to keep the project aligned with Week 2 objectives.
+
+---
 
 ## Conclusion
-
-In Week 2, I built a simple backend application using Python. This project strengthened my understanding of core programming concepts, it demonstrates the fundamentals of building a backend application, focusing on data structures, logic flow, and clean code practices. 
-
-## Challenges faced:
-- Understanding how to structure backend logic using functions and loops.
-- App refused to run until `#!/usr/bin/env python` was used at the top of the script. 
-- Managing in-memory data and realizing data resets when the app exits.
-- Difficulty pushing all changes to github at once. i had to cd into the verious folders and had to push each content seperately. 
-- On entering `git add .` a message poped out `warning: in the working copy of 'README.md', CRLF will be replaced by LF the next time Git touches it.` i resolved this by running: git config --global core.autocrlf true
-
-## What I Learned
-
-- Organizing data using lists
-- Writing clean, reusable functions
-- Using loops and conditionals for logic control
-- Building a simple interactive backend application
-
-## Week 2 Technical Summary
-
-In Week 2, I built a simple backend application using Python to strengthen my understanding of core programming concepts. The project focused on implementing backend logic and managing data using basic data structures.
-
-The application handles task management through a command-line interface, allowing users to add, view, and remove tasks. Data is stored in memory using a list, emphasizing how backend systems organize and manipulate data without relying on databases or external services.
-
-Key concepts practiced include variables, lists, functions, loops, and conditional statements, with an emphasis on clean syntax and readable code. The project reinforced logical thinking, control flow, and the importance of simplicity when building foundational backend systems.
-
-This week established a strong foundation for more advanced topics such as persistent storage, APIs, automation, and cloud-based deployments in later stages.
+This Week 2 project strengthened my understanding of **backend logic**, **data structures**, and **core programming fundamentals**.  
+It serves as a solid foundation for more advanced backend, DevOps, and cloud-based projects in future weeks.
