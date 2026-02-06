@@ -36,6 +36,7 @@ Reasons for choosing this API:
 
 ## Step 3: Setting Up the Project
 I created a project folder and added the following files:
+
 - `app.py` – main application file
 - `README.md` – project overview
 - `documentation.md` – step-by-step documentation
