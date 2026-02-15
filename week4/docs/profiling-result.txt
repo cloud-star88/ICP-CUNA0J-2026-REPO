@@ -1,0 +1,86 @@
+PROFILING RESULTS – WEEK 4 OPTIMIZATION
+
+Application: Python To-Do App
+Objective: Identify performance, security, and readability improvement areas
+
+--------------------------------------------------
+
+1. GLOBAL STATE USAGE
+Observation:
+- The application relied on a global `tasks` list shared across multiple functions.
+
+Impact:
+- Makes data flow harder to track.
+- Reduces predictability as the application grows.
+- Increases risk of unintended side effects.
+
+Optimization Decision:
+- Remove global state and pass the task list explicitly to functions.
+
+--------------------------------------------------
+
+2. FUNCTION EXECUTION PATTERNS
+Observation:
+- Core functions (`add_task`, `view_tasks`, `remove_task`) are executed frequently within the main loop.
+- `remove_task()` always calls `view_tasks()`, even when no tasks exist.
+
+Impact:
+- Unnecessary function calls.
+- Reduced clarity in control flow.
+
+Optimization Decision:
+- Add early checks to prevent unnecessary execution.
+- Improve conditional logic before function calls.
+
+--------------------------------------------------
+
+3. USER INPUT HANDLING
+Observation:
+- User input was accepted directly without validation.
+- Empty tasks could be added.
+- Invalid menu and task number inputs relied on exception handling.
+
+Impact:
+- Potential runtime errors.
+- Poor user experience.
+- Increased risk of unexpected behavior.
+
+Optimization Decision:
+- Add input validation for empty strings.
+- Explicitly check numeric input ranges.
+- Improve error messages for clarity.
+
+--------------------------------------------------
+
+4. READABILITY AND MAINTAINABILITY
+Observation:
+- Functions relied on shared state rather than explicit inputs.
+- Some functions handled multiple responsibilities.
+- Limited comments explaining intent.
+
+Impact:
+- Harder to understand and maintain.
+- Difficult to test or extend.
+
+Optimization Decision:
+- Refactor functions to follow single-responsibility principles.
+- Improve naming consistency.
+- Add comments to explain key logic.
+
+--------------------------------------------------
+
+5. PERFORMANCE SUMMARY
+Observation:
+- No significant computational bottlenecks due to application size.
+- Optimization focus shifted from execution speed to structural efficiency.
+
+Conclusion:
+- Performance improvements were achieved through better structure,
+  reduced unnecessary execution, and clearer data flow rather than raw speed gains.
+
+--------------------------------------------------
+
+FINAL NOTE
+This profiling process guided refactoring decisions and ensured
+that optimizations improved code quality, safety, and maintainability
+without altering application functionality.
