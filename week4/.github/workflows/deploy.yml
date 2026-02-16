@@ -21,7 +21,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd ~
-            if [ ! -d "week4-optimization" ]; then
+            if [ ! -d "week4" ]; then
               git clone https://github.com/cloud-star88/ICP-CUNA0J-2026-REPO.git
             else
               cd week4 && git pull
