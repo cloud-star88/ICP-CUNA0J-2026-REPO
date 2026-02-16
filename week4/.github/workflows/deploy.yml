@@ -1,4 +1,4 @@
-name: Deploy Week 4 Project
+name: CI/CD Docker Deploy to EC2
 
 on:
   push:
@@ -6,23 +6,38 @@ on:
       - main
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ Checkout repository
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Deploy to EC2
+      # 2️⃣ Login to Docker Hub
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ vars.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      # 3️⃣ Build and Push Docker Image
+      - name: Build and Push Docker Image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: ${{ vars.DOCKERHUB_USERNAME }}/week4-app:latest
+
+      # 4️⃣ Deploy on EC2
+      - name: Deploy to EC2 via SSH
         uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd ~
-            if [ ! -d "week4" ]; then
-              git clone https://github.com/cloud-star88/ICP-CUNA0J-2026-REPO.git
-            else
-              cd week4 && git pull
-            fi
+            docker stop week4-app || true
+            docker rm week4-app || true
+            docker pull ${{ vars.DOCKERHUB_USERNAME }}/week4-app:latest
+            docker run -d -p 80:5000 --name week4-app ${{ vars.DOCKERHUB_USERNAME }}/week4-app:latest
