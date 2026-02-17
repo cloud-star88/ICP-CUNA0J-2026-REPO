@@ -23,7 +23,7 @@ jobs:
 
       # 3️⃣ Build and Push Docker Image
       - name: Build and Push Docker Image
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v5
         with:
           context: .
           push: true
@@ -37,7 +37,5 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            docker stop week4-app || true
-            docker rm week4-app || true
             docker pull ${{ vars.DOCKERHUB_USERNAME }}/week4-app:latest
             docker run -d -p 5000:5000 --name week4-app ${{ vars.DOCKERHUB_USERNAME }}/week4-app:latest
