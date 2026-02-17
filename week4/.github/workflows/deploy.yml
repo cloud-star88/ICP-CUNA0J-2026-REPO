@@ -20,23 +20,41 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
+            # Set error handling
+            set -e
+            
             # Go to home directory
             cd ~
 
-            # Clone repo if not exists
+            # Clone repo if not exists, otherwise just navigate to it
             if [ ! -d "week4" ]; then
               git clone https://github.com/cloud-star88/ICP-CUNA0J-2026-REPO.git week4
             fi
 
             cd week4
+            
+            # Reset any local changes and pull latest
+            git fetch origin
+            git reset --hard origin/main
             git pull origin main
 
-            # Stop existing container if running
-            sudo docker stop week4-app || true
-            sudo docker rm week4-app || true
+            # Stop and remove existing container if running
+            sudo docker stop week4-app 2>/dev/null || true
+            sudo docker rm week4-app 2>/dev/null || true
 
-            # Build Docker image
-            sudo docker build -t week4-app .
+            # Remove old image to avoid caching issues
+            sudo docker rmi week4-app 2>/dev/null || true
 
-            # Run new container
-            sudo docker run -d -p 5000:5000 --name week4-app week4-app
+            # Build Docker image with no cache
+            sudo docker build --no-cache -t week4-app .
+
+            # Run new container with restart policy
+            sudo docker run -d \
+              -p 5000:5000 \
+              --name week4-app \
+              --restart unless-stopped \
+              week4-app
+
+            # Verify container is running
+            sleep 2
+            sudo docker ps | grep week4-app
