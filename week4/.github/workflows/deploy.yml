@@ -40,4 +40,4 @@ jobs:
             docker stop week4-app || true
             docker rm week4-app || true
             docker pull ${{ vars.DOCKERHUB_USERNAME }}/week4-app:latest
-            docker run -d -p 80:5000 --name week4-app ${{ vars.DOCKERHUB_USERNAME }}/week4-app:latest
+            docker run -d -p 5000:5000 --name week4-app ${{ vars.DOCKERHUB_USERNAME }}/week4-app:latest
